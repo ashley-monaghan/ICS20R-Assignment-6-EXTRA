@@ -4,11 +4,8 @@
 // This program shows pictures of dogs!
 
 using System;
-using System.Reflection;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Net.Http;
-using System.Text.Json;
 using System.Text.Json.Nodes;
 
 class Program
@@ -25,7 +22,7 @@ class Program
         JsonNode factsNode = docNode!["message"]!;
         string fact = factsNode.ToString();
         Console.WriteLine(fact);
-        
+
         Console.WriteLine("\nDone.");
     }
 }
